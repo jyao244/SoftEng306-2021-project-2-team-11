@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popular_section"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/search_bar"
+    android:paddingLeft="30dp">
+
+    <TextView
+        android:id="@+id/popular_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:fontFamily="@font/s700"
+        android:text="Popular:"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popular_items"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/popular_title"
+        tools:listitem="@layout/popular_item" />
+
+</RelativeLayout>
+

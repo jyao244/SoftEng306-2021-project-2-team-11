@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1015924444481",
+    "project_id": "furnishings-63b59",
+    "storage_bucket": "furnishings-63b59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015924444481:android:6b1b33e57659d0926a65c0",
+        "android_client_info": {
+          "package_name": "com.example.furnishings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015924444481-q57bi1o62e48e0fkfudssgmfo7do0f8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "xxx" // put your own google api key here
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015924444481-q57bi1o62e48e0fkfudssgmfo7do0f8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

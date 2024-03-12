@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity">
+
+
+    <include layout="@layout/search_bar_component" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar">
+
+        <LinearLayout
+            android:id="@+id/item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/search_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:fontFamily="@font/s700"
+                android:layout_marginBottom="20dp"
+                android:textSize="24sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/search_items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/popular_title"
+                android:layoutAnimation="@anim/layout_animation"
+                tools:listitem="@layout/card_item" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
